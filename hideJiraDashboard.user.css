@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           Hide Jira's Dashboard Section
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Reclaim wasted space on left side of screen
+@author         Robert Leachman @ OCHIN.org
+==/UserStyle== */
+@-moz-document url-prefix("https://jira.ochin.org/secure/Dashboard.jspa") {
+    #announcement-banner {
+        padding: 0px;
+    }
+
+    #dashboard > .tabs.vertical {
+        border-right: 0px;
+    }
+
+    #dashboard > .vertical.tabs {
+        width: 0px;
+    }
+
+    #dashboard > .vertical.tabs + #dashboard-content {
+        margin-left: 0px;
+    }
+}
